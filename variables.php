@@ -3,7 +3,7 @@
   $username = 'root';
   $password = 'secret';
 
- $bdd = new PDO('mysql:host=mysql;dbname=langue;charset=utf8', $username, $password);
+ $bdd = new PDO('mysql:host=localhoast;port=3306;dbname=langue;charset=utf8', $username, $password);
 
   $langue = NULL;
   $langue2 = $bdd->query('SELECT langue FROM langue');
